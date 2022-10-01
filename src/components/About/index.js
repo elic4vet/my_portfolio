@@ -27,15 +27,13 @@ const About = () => {
             />
           </h1>
           <p>👋 Hi I am Elisabeth Erkekoglou</p>
+          <img src="https://i.ibb.co/kxcsKLD/elisabeth.jpg" alt="elisabeth" />
           <p>🇬🇷 Front-end developer based in 🇩🇪 </p>
+          <p>👀 I’m interested in coding </p>
           <p>
-            {' '}
-            👀 I’m interested in coding
-            <br />
-            🌱 I’m currently working on various projects mostly based on React{' '}
-            <br />
-            💞️ I’m looking to collaborate on various coding projects
+            🌱 I’m currently working on various projects mostly based on React
           </p>
+          <p> I’m looking to collaborate on various coding projects</p>💞️
         </div>
         <div className="stage-cube-cont">
           <div className="cubespinner">
