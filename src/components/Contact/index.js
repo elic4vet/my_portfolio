@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Loader from 'react-loaders'
+
 import { Marker, Popup } from 'react-leaflet'
 
 import { MapContainer } from 'react-leaflet/MapContainer'
@@ -85,7 +86,6 @@ const Contact = () => {
             </form>
           </div>
         </div>
-
         <div className="info-map">
           Elisabeth Erkekoglou
           <br />
@@ -95,6 +95,7 @@ const Contact = () => {
           <span>email</span>
         </div>
 
+        {/*
         <div className="map-wrap">
           <MapContainer
             center={[51.90693, 8.37853]}
@@ -106,7 +107,9 @@ const Contact = () => {
               <Popup>Eli lives here, come over for a cup of coffee :)</Popup>
             </Marker>
           </MapContainer>
-        </div>
+        </div>{' '}
+
+        */}
       </div>
       <Loader type="pacman" />
     </>
