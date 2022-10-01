@@ -55,22 +55,6 @@
     box-sizing: border-box;
     min-height: 150px;
   }
-
-  .flat-button {
-    color: #ffd700;
-    font-size: 11px;
-    letter-spacing: 3px;
-    text-decoration: none;
-    padding: 8px 10px;
-    border: 1px solid #ffd700;
-    float: left;
-    border-radius: 4px;
-    background: 0 0;
-    text-transform: uppercase;
-    float: right;
-    text-align: center;
-    margin-right: 10px;
-  }
 }
 
 .map-wrap {
@@ -83,8 +67,8 @@
 
 .leaflet-container {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 53%;
+  height: 115%;
   opacity: 0;
   animation: backInRight 1s 1.2s;
   animation-fill-mode: forwards;
@@ -102,6 +86,8 @@
   font-size: 17px;
   font-weight: 300;
   opacity: 0;
+  width: 100%;
+  height: 50%;
 
   span {
     font-size: 16px;
