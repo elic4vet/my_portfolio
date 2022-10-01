@@ -1,9 +1,13 @@
-import Loader from 'react-loaders'
-import AnimatedLetters from '../AnimatedLetters'
 import { useState } from 'react'
+import Loader from 'react-loaders'
+import { Marker, Popup } from 'react-leaflet'
+
+import { MapContainer } from 'react-leaflet/MapContainer'
+import { TileLayer } from 'react-leaflet/TileLayer'
+
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
-
+import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 
 const Contact = () => {
@@ -15,12 +19,7 @@ const Contact = () => {
     e.preventDefault()
 
     emailjs
-      .sendForm(
-        'gmail',
-        'template_2dw3l2t',
-        reForm.current,
-        'bptcu6hBf0otkq1RD'
-      )
+      .sendForm('gmail', 'template_2dw3l2t', reForm.current, 'bptcu6Bf0otkq1RD')
       .then(
         () => {
           alert('Message successfully sent!')
@@ -85,6 +84,28 @@ const Contact = () => {
               </ul>
             </form>
           </div>
+        </div>
+
+        <div className="info-map">
+          Elisabeth Erkekoglou
+          <br />
+          Germany
+          <br />
+          Gütersloh
+          <span>email</span>
+        </div>
+
+        <div className="map-wrap">
+          <MapContainer
+            center={[51.90693, 8.37853]}
+            zoom={13}
+            scrollWheelZoom={false}
+          >
+            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+            <Marker position={[51.90693, 8.37853]}>
+              <Popup>Eli lives here, come over for a cup of coffee :)</Popup>
+            </Marker>
+          </MapContainer>
         </div>
       </div>
       <Loader type="pacman" />
