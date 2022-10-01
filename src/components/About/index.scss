@@ -91,3 +91,13 @@ p {
     transform: rotateX(90deg);
   }
 }
+
+img {
+  width: 35%;
+  float: right;
+  margin: auto;
+  border-radius: 10%;
+  transition-delay: 2s;
+  animation: bounceIn 2s 2s;
+  animation-fill-mode: forwards;
+}
