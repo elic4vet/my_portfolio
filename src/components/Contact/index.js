@@ -1,15 +1,23 @@
 import { useState } from 'react'
-import Loader from 'react-loaders'
-
-import { Marker, Popup } from 'react-leaflet'
-
-import { MapContainer } from 'react-leaflet/MapContainer'
-import { TileLayer } from 'react-leaflet/TileLayer'
-
 import { useRef } from 'react'
+import Loader from 'react-loaders'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import L from 'leaflet'
+
+import 'leaflet/dist/leaflet.css'
 import './index.scss'
+
+import icon from 'leaflet/dist/images/marker-icon.png'
+import iconShadow from 'leaflet/dist/images/marker-shadow.png'
+
+let DefaultIcon = L.icon({
+  iconUrl: icon,
+  shadowUrl: iconShadow,
+})
+
+L.Marker.prototype.options.icon = DefaultIcon
 
 const Contact = () => {
   const [letterClass] = useState('text-animate')
@@ -89,13 +97,10 @@ const Contact = () => {
         <div className="info-map">
           Elisabeth Erkekoglou
           <br />
-          Germany
+          Gütersloh, Germany
           <br />
-          Gütersloh
           <span>email</span>
         </div>
-
-        {/*
         <div className="map-wrap">
           <MapContainer
             center={[51.90693, 8.37853]}
@@ -108,8 +113,6 @@ const Contact = () => {
             </Marker>
           </MapContainer>
         </div>{' '}
-
-        */}
       </div>
       <Loader type="pacman" />
     </>
