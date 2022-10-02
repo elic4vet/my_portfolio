@@ -27,7 +27,11 @@ const About = () => {
             />
           </h1>
           <p>👋 Hi I am Elisabeth Erkekoglou</p>
-          <img src="https://i.ibb.co/kxcsKLD/elisabeth.jpg" alt="elisabeth" />
+          <img
+            src="https://i.ibb.co/kxcsKLD/elisabeth.jpg"
+            alt="elisabeth"
+            className="elisabeth"
+          />
           <p>🇬🇷 Front-end developer based in 🇩🇪 </p>
           <p>👀 I’m interested in coding </p>
           <p>
