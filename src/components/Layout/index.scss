@@ -54,8 +54,13 @@
   }
 }
 
+.container,
+.contact-page,
+.container,
+.container .about-page,
 .about-page,
-.contact-page {
+.container,
+.portfolio-page {
   .text-zone {
     position: absolute;
     left: 10%;
