@@ -1,33 +1,37 @@
 {
   "portfolio": [
     {
-      "cover": "/Portfolio/1/acropolis",
+      "cover": "/Portfolio/1/dictionary_app1.png",
+      "title": "Dictionary app",
+      "description": "HTML, CSS and React",
+      "url": "https://starlit-zabaione-17278b.netlify.app/"
+    },
+
+    {
+      "cover": "/Portfolio/1/acropolis.png",
       "title": "Acropolis",
       "description": "HTML & CSS",
       "url": "https://elastic-mayer-0f8f1e.netlify.app/"
     },
+
     {
-      "cover": "/portfolio/1/dictionary_app",
-      "title": "GGWP",
+      "cover": "/Portfolio/1/weather2.png",
+      "title": "Weather app",
       "description": "HTML, CSS and React",
-      "url": "https://starlit-zabaione-17278b.netlify.app/"
+      "url": "https://legendary-meringue-c0a752.netlify.app/"
     },
+
     {
-      "cover": "/portfolio/1/weather3",
-      "title": "GGWP",
+      "cover": "/Portfolio/1/weather3.png",
+      "title": "Weather app ",
       "description": "HTML, CSS and Javascript",
       "url": "https://zealous-swirles-faf625.netlify.app/"
     },
+
     {
-      "cover": "/portfolio/1/weather2",
-      "title": "GGWP",
-      "description": "HTML, CSS and React",
-      "url": "http://google.com"
-    },
-    {
-      "cover": "/portfolio/1/translator",
-      "title": "GGWP",
-      "description": "HTML, CSS and React",
+      "cover": "/Portfolio/1/translator.png",
+      "title": "Translator app",
+      "description": "Coming soon..",
       "url": "http://google.com"
     }
   ]
