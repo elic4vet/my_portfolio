@@ -5,7 +5,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 
 const Portfolio = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
+  const [letterClass] = useState('text-animate')
   return (
     <>
       <div className="container portfolio-page">
