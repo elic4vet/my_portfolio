@@ -13,11 +13,3 @@ body {
   -moz-osx-font-smoothing: grayscale;
   list-style: none;
 }
-
-@media screen and (max-width: 1200px) {
-  body {
-    display: flex;
-    text-align: center;
-    overflow: visible;
-  }
-}
